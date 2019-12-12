@@ -6,9 +6,9 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'salvemundi' # Only 10 chars displayed.
+team_name = 'Salvemundi' # Only 10 chars displayed.
 strategy_name = 'Deum laudamus victoria'
-strategy_description = ''
+strategy_description = 'Start trustful and be more cautious'
     
 def move(my_history, their_history, my_score, their_score):
     if len(my_history)==0: #It's the first round; collude.
