@@ -8,8 +8,8 @@
 
 team_name = 'Salvemundi' # Only 10 chars displayed.
 strategy_name = 'Deum laudamus victoria'
-strategy_description = 'Start trustful and be more cautious'
-    
+strategy_description = "Start trustful and then become more cautious of the other AI's history"
+
 def move(my_history, their_history, my_score, their_score):
     if len(my_history)==0: #It's the first round; collude.
         return 'c'
