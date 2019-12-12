@@ -7,12 +7,16 @@
 ####
 
 team_name = 'salvemundi' # Only 10 chars displayed.
-strategy_name = ''
+strategy_name = 'Deum laudamus victoria'
 strategy_description = ''
     
 def move(my_history, their_history, my_score, their_score):
     if len(my_history)==0: #It's the first round; collude.
-        return 'c'    
+        return 'c'
+    elif 'b' in their_history[-6]: #If the other AI has betrayed within the last six rounds...
+        return 'b' #Betray
+    else:
+        return 'c' #Collude
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
     
